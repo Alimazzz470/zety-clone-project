@@ -10,7 +10,23 @@ const nextConfig: NextConfig = {
         loaders: [LOADER]
       }
     }
-  }
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn-images.zety.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'logo.clearbit.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'slelguoygbfzlpylpxfs.supabase.co',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
